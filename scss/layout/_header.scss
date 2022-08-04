@@ -1,12 +1,14 @@
 .header{
-    color: #fff;
-    font-size: 18px;
+    color: #4e5968;;
+    font-size: 15px;
     background-color: transparent;
     z-index: 10;
     position: fixed;
     width: 100%;
+    background: #fff;
+    border-bottom: 1px solid rgba(0,27,55,0.1);
 
-    .header-inner{
+    .header.inner{
         padding: 0 24px;
         display: flex;
         align-items: center;
@@ -14,20 +16,31 @@
     }
 
     .logo{
-        background: url(../img/logo-white.svg) no-repeat center;
-        width: 160px;height: 48px;
+        width: 76px;
+        height: 20px;
 
         a{display: block;height: 100%;}
     }
 
+    .menu-area{width: 100%;}
     .menu-wrap{
         display: flex;
-        align-items: center;
+        justify-content: flex-end;
         padding-left: 80px;
+        white-space: nowrap;
 
         .menu-list{
             height: 100%;
-            padding: 31px 24px 22px 24px;
+            padding: 23px 10px 18px 10px;
+
+            &>a{
+                padding: 15px;
+                border-radius: 10px;
+                &:hover{
+                    background: #eee;
+    
+                }
+            }
         }
 
         .sub-wrap{display: none;}
@@ -36,10 +49,7 @@
     .utll-area{
         display: flex;
         align-items: center;
-        position: absolute;
-        right: 40px;
-        // height: 100%;
-        // padding: 31px 0 32px;
+        justify-content: flex-end;
         &>div{margin-left: 32px;}
     }
 
@@ -54,7 +64,7 @@
         .link-line{
             display: block;
             height: 1px;width: 20px;
-            background-color: #fff;
+            background-color: #4e5968;;
             margin: 7px auto;
         }
 

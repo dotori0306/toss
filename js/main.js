@@ -54,7 +54,7 @@ var mainSlide = new Swiper(".visual-slide.swiper", {
       trigger:".video-area",
       start:"top bottom",
       end:"bottom 100%",
-      markers:true,
+      // markers:true,
       scrub:1,
     },
     'clip-path': "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"
@@ -84,7 +84,7 @@ $('[data-fade]').each(function(){
       trigger:$(this),
       start:"top 80%",
       end:"bottom top",
-      markers:true,
+      // markers:true,
     },
     duration:1,
     opacity:1,
